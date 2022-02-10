@@ -12,19 +12,21 @@
   margin-left: 12%;
 }
 .span1 {
-  margin-right: 50%;
+  margin-right: 25%;
   font-size: 50px;
 }
 .span2 {
   color: red;
 }
 .container2 {
-  display: flex;
-  justify-content: space-evenly;
-  height: 40%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
   color: rgba(255, 0, 0, 0.774);
+  justify-content: center;
 }
 .card {
+  height: 100%;
   border: 1px solid red;
   border-radius: 8px;
   padding-left: 15px;
@@ -36,16 +38,15 @@
   margin-left: 90%;
 }
 .tin {
-  width: 75%;
-  margin-left: 20%;
+  margin-left: 10%;
   font-size: 25px;
 }
 .container4 {
-  display: flex;
-  margin-left: 10%;
+  margin-left: 5%;
   font-size: 50px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+  display: flex;
 }
 .line {
   margin-top: 50px;
@@ -57,6 +58,7 @@
 }
 .card1 {
   width: 25%;
+  height: 50%;
   margin-top: 4%;
   margin-left: 20%;
   border: 1px solid red;
@@ -71,14 +73,13 @@
 }
 
 .pop {
-  width: 25%;
   height: 25%;
   border: 2px solid red;
   border-radius: 8px;
   background-color: rgb(255, 255, 255);
   text-align: center;
   position: fixed;
-  top: 25%;
+  top: 35%;
   left: 35%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
@@ -87,4 +88,28 @@
 
 .nav2 {
   margin-left: 78%;
+}
+
+@media screen and (max-width: 700px) and (min-width: 200px) and (max-height: 800px) {
+  .span3 {
+    display: none;
+  }
+
+  .container2 {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .card {
+    height: 50px;
+    width: 100%;
+  }
+
+  .input {
+    display: none;
+  }
+
+  .line {
+    display: none;
+  }
 }
